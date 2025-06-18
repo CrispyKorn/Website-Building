@@ -1,0 +1,17 @@
+html {
+    font-family: "Kirang Haerang", system-ui;
+    font-size: 32px;
+    text-align: center;
+    background-color: #99C55E;
+}
+
+h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 300px;
+    color: #FEDE1C;
+    text-align: center;
+}
+
+p, li {
+    color: #FEDE1C
+}
