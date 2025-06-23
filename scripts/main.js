@@ -22,7 +22,7 @@ function setUsername()
     }
     
     localStorage.setItem("name", username);
-    title.textContent = `${username} loves corn`
+    title.textContent = `${username} on the cob`
 }
 
 if (!localStorage.getItem("name"))
@@ -39,4 +39,15 @@ else
 changeUserButton.addEventListener("click", () => 
 {
     setUsername();
+});
+
+changeUserButton.addEventListener("mouseover", () =>
+{
+    changeUserButton.style.background = "#FEDE1C";
+    
+});
+
+changeUserButton.addEventListener("mouseleave", () =>
+{
+    changeUserButton.style.background = "#99C55E";
 });
