@@ -33,7 +33,7 @@ else
 {
     const storedName = localStorage.getItem("name");
 
-    title.textContent = `${storedName} loves corn`
+    title.textContent = `${storedName} on the cob`
 }
 
 changeUserButton.addEventListener("click", () => 
