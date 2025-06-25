@@ -47,8 +47,9 @@ img {
 }
 
 #mainContent {
-    width: 500px;
+    width: fit-content;
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 #interactiveSection {
@@ -76,6 +77,5 @@ footer {
 }
 
 #secretContent {
-    visibility: hidden;
-    height: 0;
+    display: none;
 }

@@ -57,7 +57,6 @@ showSecretsButton.addEventListener("click", () =>
 {
     secretsHidden = !secretsHidden;
 
-    secretContent.style.height = secretsHidden ? "0" : "auto";
-    secretContent.style.visibility = secretsHidden ? "hidden" : "visible";
+    secretContent.style.display = secretsHidden ? "none" : "block";
     showSecretsButton.innerHTML = secretsHidden ? "Show secrets" : "Hide secrets";
 });
