@@ -74,3 +74,8 @@ footer {
     background-color: #FEDE1C;
     height: 100px;
 }
+
+#secretContent {
+    visibility: hidden;
+    height: 0;
+}

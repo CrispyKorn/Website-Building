@@ -22,7 +22,7 @@ function setUsername()
     }
     
     localStorage.setItem("name", username);
-    title.textContent = `${username} on the cob`
+    title.textContent = `${username} on the cob`;
 }
 
 if (!localStorage.getItem("name"))
@@ -33,7 +33,7 @@ else
 {
     const storedName = localStorage.getItem("name");
 
-    title.textContent = `${storedName} on the cob`
+    title.textContent = `${storedName} on the cob`;
 }
 
 changeUserButton.addEventListener("click", () => 
@@ -41,13 +41,23 @@ changeUserButton.addEventListener("click", () =>
     setUsername();
 });
 
-changeUserButton.addEventListener("mouseover", () =>
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => 
 {
-    changeUserButton.style.background = "#FEDE1C";
-    
+    button.addEventListener("mouseover", () => button.style.background = "#FEDE1C");
+    button.addEventListener("mouseleave", () => button.style.background = "#99C55E");
 });
 
-changeUserButton.addEventListener("mouseleave", () =>
+const showSecretsButton = document.getElementById("secretsButton");
+const secretContent = document.getElementById("secretContent");
+var secretsHidden = true;
+
+showSecretsButton.addEventListener("click", () => 
 {
-    changeUserButton.style.background = "#99C55E";
+    secretsHidden = !secretsHidden;
+
+    secretContent.style.height = secretsHidden ? "0" : "auto";
+    secretContent.style.visibility = secretsHidden ? "hidden" : "visible";
+    showSecretsButton.innerHTML = secretsHidden ? "Show secrets" : "Hide secrets";
 });
