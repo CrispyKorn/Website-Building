@@ -48,12 +48,17 @@ img {
 
 #mainContent {
     width: fit-content;
+    max-width: 20%;
     margin: 0 auto;
     padding: 0 25px;
 }
 
 #interactiveSection {
     margin: 100px auto 50px auto;
+}
+
+#realSecret {
+    text-shadow: none;
 }
 
 button {
